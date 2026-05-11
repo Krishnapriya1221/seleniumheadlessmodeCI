@@ -26,6 +26,7 @@ public class DemoqaTestBoxTest {
     @Test
     void openPageTest() {
         System.out.println("Page opened successfully");
+        System.out.println("Testing auto trigger from main!");
     }
 
     @Test
