@@ -55,6 +55,7 @@ public class DemoqaTestBoxTest {
         Assertions.assertTrue(output.contains("John Doe"));
 
         System.out.println("TEST PASSED!");
+        System.out.println(" Form submitted and verified!");
     }
     @AfterEach
     void teardown() {
