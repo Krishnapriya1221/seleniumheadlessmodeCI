@@ -57,8 +57,8 @@ public class DemoqaTestBoxTest {
         System.out.println("TEST PASSED!");
         System.out.println(" Form submitted and verified!");
         System.out.println(" Form submitted and verified and test pass!");
-        System.out.println("fix push target!");
-        System.out.println("Main branch confirmed!");
+        System.out.println("fix push target again!");
+
     }
     @AfterEach
     void teardown() {
