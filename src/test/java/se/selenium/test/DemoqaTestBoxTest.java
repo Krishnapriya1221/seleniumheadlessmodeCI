@@ -12,7 +12,7 @@ public class DemoqaTestBoxTest {
     void setup() {
         //driver = new ChromeDriver(); // normal browser-only this changes for headless
 
-        // Configure headless Chrome
+        // headless Chrome
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");              // no browser window
         options.addArguments("--no-sandbox");            // needed for Linux/GitHub
@@ -56,9 +56,6 @@ public class DemoqaTestBoxTest {
 
         System.out.println("TEST PASSED!");
         System.out.println(" Form submitted and verified!");
-        System.out.println(" Form submitted and verified and test pass!");
-        System.out.println("fix push target again!");
-        System.out.println("check again!");
 
     }
     @AfterEach
