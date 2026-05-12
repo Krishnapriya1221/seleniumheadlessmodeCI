@@ -26,7 +26,7 @@ public class DemoqaTestBoxTest {
     @Test
     void openPageTest() {
         System.out.println("Page opened successfully");
-        System.out.println("Testing auto trigger from main!");
+
     }
 
     @Test
@@ -46,18 +46,19 @@ public class DemoqaTestBoxTest {
         js.executeScript("arguments[0].scrollIntoView(true);", submitButton);
         js.executeScript("arguments[0].click();", submitButton);
 
-        // Click button
+        // normal click
         //submitButton.click();
 
         // Verify output
         String output = driver.findElement(By.id("output")).getText();
 
         Assertions.assertTrue(output.contains("John Doe"));
+        Assertions.assertTrue(output.contains("john@test.com"));
+        Assertions.assertTrue(output.contains("Street 1"));
+        Assertions.assertTrue(output.contains("Street 2"));
 
-        System.out.println("TEST PASSED!");
-        System.out.println(" Form submitted and verified!");
-        System.out.println(" master branch check again");
 
+        System.out.println("TEST PASSED - All 4 fields verified!!");
 
     }
     @AfterEach
