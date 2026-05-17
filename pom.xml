@@ -33,4 +33,34 @@
 
     </dependencies>
 
+    <build>
+        <plugins>
+
+            <!-- Surefire: runs JUnit 5 tests and writes XML reports -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <useModulePath>false</useModulePath>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire Report: converts XML reports to HTML for GitHub Pages -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+
+            <!-- Site: required by surefire-report to write into target/site/ -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.12.1</version>
+            </plugin>
+
+        </plugins>
+    </build>
+
 </project>

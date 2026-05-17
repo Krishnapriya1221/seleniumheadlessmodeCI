@@ -52,10 +52,11 @@ public class DemoqaTestBoxTest {
         // Verify output
         String output = driver.findElement(By.id("output")).getText();
 
-        Assertions.assertTrue(output.contains("John Doe"));
-        Assertions.assertTrue(output.contains("john@test.com"));
-        Assertions.assertTrue(output.contains("Street 1"));
-        Assertions.assertTrue(output.contains("Street 2"));
+        Assertions.assertTrue(output.contains("John Doe")," Name not found in output!");
+
+        Assertions.assertTrue(output.contains("john@test.com"),"Email not found in output!");
+        Assertions.assertTrue(output.contains("Street 1"),"Current address not found in output!");
+        Assertions.assertTrue(output.contains("Street 2"), " Permanent address not found in output!");
 
 
         System.out.println("TEST PASSED - All 4 fields verified!!");
