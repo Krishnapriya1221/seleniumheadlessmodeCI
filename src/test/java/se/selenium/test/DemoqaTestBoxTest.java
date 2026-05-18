@@ -61,6 +61,7 @@ public class DemoqaTestBoxTest {
 
         System.out.println("TEST PASSED - All 4 fields verified!!");
         System.out.println("TEST PASSED - sure file");
+        System.out.println("TEST PASSED - sure file tested again");
 
     }
     @AfterEach
